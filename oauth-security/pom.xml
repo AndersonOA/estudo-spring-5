@@ -22,6 +22,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+
+		<!-- Spring Security -->
+		<spring.security.oauth.version>2.3.0.RELEASE</spring.security.oauth.version>
+		<spring.security.jwt.version>1.0.9.RELEASE</spring.security.jwt.version>
 	</properties>
 
 	<dependencies>
@@ -65,12 +69,14 @@
 		<dependency>
 			<groupId>org.springframework.security.oauth</groupId>
 			<artifactId>spring-security-oauth2</artifactId>
+			<version>${spring.security.oauth.version}</version>
 		</dependency>
 
 		<!-- Spring Security JWT -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-jwt</artifactId>
+			<version>${spring.security.jwt.version}</version>
 		</dependency>
 
 		<!-- Migracoes - Flyway -->
