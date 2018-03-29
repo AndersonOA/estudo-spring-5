@@ -114,6 +114,10 @@ public class Cliente implements Serializable {
         return !this.ativo;
     }
 
+    public boolean isNovo() {
+        return this.codigo == null;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
